@@ -86,7 +86,7 @@ import time
 
 # Typecast API 설정
 API_URL = "https://typecast.ai/api/speak"
-API_TOKEN = "Bearer __plt9ETPhnqVPpCcSdxZPhdQgV6HvSvbuUGMKBUCX7AL"
+API_TOKEN = f'Bearer {os.getenv("TYPECAST_API_KEY")}'
 HEADERS = {
     'Content-Type': 'application/json',
     'Authorization': API_TOKEN
